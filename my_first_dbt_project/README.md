@@ -13,3 +13,12 @@ Try running the following commands:
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+## My commands
+- dbt debug
+- dbt run
+- dbt docs generate
+- dbt docs serve
+- dbt run -s models/reports/zsj_report.sql 
+- dbt run -s models/reports/*
+
