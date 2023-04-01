@@ -3,7 +3,7 @@ WITH buffers AS (
         id_lekarny,
         St_buffer(geom::geography,500)::geometry AS geom
 
-    from lekarny
+    from {{ source('dbt_src', 'lekarny') }}
 )
 
 ,pocty AS (
@@ -21,5 +21,5 @@ SELECT
   a.*
   ,b.pocet
 FROM
-  lekarny a
+  {{ source('dbt_src','lekarny') }} a
   LEFT JOIN pocty b ON a.id_lekarny = b.id_lekarny

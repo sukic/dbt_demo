@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: dbt_src
+    database: postgis
+    schema: dbt_src
+    tables:
+      - name: lekarny
+      - name: zsj
